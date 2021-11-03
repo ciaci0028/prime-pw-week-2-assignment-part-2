@@ -154,6 +154,7 @@ if (number >= 2) {
 // colorTwo is set to 'red', and mix is set to true. We check if mix is true
 // -- it is, so we set colorOne and colorTwo to 'purple'
 
+// FIX - the string variables for colorOne and colorTwo need to be swapped
 /*
 let colorOne = 'red';
 let colorTwo = 'blue';
@@ -168,10 +169,14 @@ if (mix === true) {
 // We check if temp is higher than 39 and if time is greater or equal to  4
 // -- they are so we console.log 'throw away the food!'
 
+// FIX - the word 'let' needs to replace the word 'const' if we want the
+// variable of time to be able to be reassigned (if it is not a constant)
 /*
 let temp = 40;
 const time = 4;
 
+// FIX - the symbols || represents OR so they need to be changed to && to
+// check for the AND function
 if (temp > 39 || time >= 4) {
   console.log('throw away the food!');
 }
@@ -181,10 +186,29 @@ if (temp > 39 || time >= 4) {
 // We check if age is greater than or equal to minAge
 // -- it is, so we console.log 'enter'.
 
+// FIX - the word 'let' needs to replaced the word 'const' if we want the
+// variable of minAge to be be reassigned (if it is not a constant)
 /*
 let age = 21;
 const minAge = 21;
 
+// FIX - instead of checking if the minAge is less than or equal to age,
+// we would want it to be 'age >= minAge' to reflect checking if the age
+// is greater than or equal to minAge
+// FIX - I am not sure if this makes a difference, but I have usually
+// seen conditional codes with 'else' on a new line after the curly bracket...
+// FIX - we would need to swap the outputs in the two console.log sections
+// in order to reflect the fact that the age is equal to the minAge and we want
+// it to log 'enter' whereas it currently will log 'no entry'
+// The code should look like this:
+//
+// if(age >= minAge) {
+// console.log('enter');
+// }
+// else {
+// console.log('no entry')
+// }
+//
 if(minAge <= age) {
   console.log('no entry');
 } else {
